@@ -1,8 +1,8 @@
 FROM debian:stable-slim
 
-ENV RAVEN_VERSION=2.5.1
+ENV RAVEN_VERSION=3.3.1
 ENV RAVEN_MINOR_VERSION=0
-ENV RAVEN_CHECKSUM=efb758150337a37316fa612d1437716bbaf8caa4bf9b4fd4396bd414578e3b7f
+ENV RAVEN_CHECKSUM=92387c207dead51d1c7e726f06ee1e51a4c4ff6bc1be7735c11576c3c6b3c3a9
 
 RUN apt-get update && apt-get install -y wget && apt-get clean
 RUN wget https://github.com/RavenProject/Ravencoin/releases/download/v${RAVEN_VERSION}/raven-${RAVEN_VERSION}.${RAVEN_MINOR_VERSION}-x86_64-linux-gnu.tar.gz \
